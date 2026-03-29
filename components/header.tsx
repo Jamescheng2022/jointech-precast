@@ -25,7 +25,7 @@ export function Header() {
           </div>
           <div className="leading-tight">
             <span className="block text-base font-bold text-white tracking-wide">
-              JoinTech
+              JamesSplice
             </span>
             <span className="block text-[10px] font-medium text-accent-300 tracking-widest uppercase">
               Precast

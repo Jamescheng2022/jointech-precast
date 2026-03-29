@@ -6,15 +6,15 @@ import { ContactForm } from "@/components/contact-form";
 export const metadata: Metadata = {
   title: "Contact & Inquiry",
   description:
-    "Send a technical inquiry to JoinTech Precast. Our engineering team responds within 24 hours.",
+    "Send a technical inquiry to JamesSplice. Our engineering team responds within 24 hours.",
 };
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@jointechprecast.com",
-    href: "mailto:info@jointechprecast.com",
+    value: "info@JamesSpliceprecast.com",
+    href: "mailto:info@JamesSpliceprecast.com",
   },
   {
     icon: Phone,

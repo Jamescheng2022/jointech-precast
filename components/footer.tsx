@@ -28,7 +28,7 @@ export function Footer() {
                 <Layers className="h-5 w-5" />
               </div>
               <div className="leading-tight">
-                <span className="block text-base font-bold text-white">JoinTech</span>
+                <span className="block text-base font-bold text-white">JamesSplice</span>
                 <span className="block text-[10px] font-medium text-accent-400 tracking-widest uppercase">Precast</span>
               </div>
             </Link>
@@ -105,8 +105,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm text-gray-400">
                 <Mail className="h-4 w-4 shrink-0 text-accent-400" />
-                <a href="mailto:info@jointechprecast.com" className="hover:text-white transition-colors">
-                  info@jointechprecast.com
+                <a href="mailto:info@JamesSpliceprecast.com" className="hover:text-white transition-colors">
+                  info@JamesSpliceprecast.com
                 </a>
               </li>
             </ul>
@@ -122,7 +122,7 @@ export function Footer() {
 
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 md:px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} JoinTech Precast. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} JamesSplice. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-gray-300 transition-colors">Terms of Use</Link>

@@ -7,7 +7,7 @@ import { getProductsByIndustry, type IndustryKey } from "@/lib/products";
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "JoinTech Precast serves civil engineering, railway & metro, bridge construction, and underground tunnel projects worldwide.",
+    "JamesSplice serves civil engineering, railway & metro, bridge construction, and underground tunnel projects worldwide.",
 };
 
 const industries = [
@@ -53,7 +53,7 @@ const industries = [
     description:
       "Long-span bridges rely on precision post-tensioning systems. We supply complete anchor assemblies and low-relaxation strand that meet PTI, GB/T, and EN standards, backed by full mill test certificates and factory proof-testing.",
     highlights: [
-      "Complete post-tensioning anchor sets (3T – 19T)",
+      "Complete post-tensioning anchor sets (3T �?19T)",
       "Low-relaxation Ø12.7mm & Ø15.2mm strands",
       "Corrugated HDPE post-tensioning ducts",
       "Grout caps and vent accessories",
@@ -71,7 +71,7 @@ const industries = [
     highlights: [
       "Longitudinal and circumferential segment couplers",
       "Ductile iron or nodular cast iron material",
-      "Compatible with Ø4m – Ø14m shield tunnels",
+      "Compatible with Ø4m �?Ø14m shield tunnels",
       "Suitable for water, road, metro, and utility tunnels",
     ],
   },
@@ -90,7 +90,7 @@ export default function IndustriesPage() {
           </div>
           <h1 className="text-4xl font-bold text-white mb-3">Industries We Serve</h1>
           <p className="text-blue-200 max-w-2xl">
-            From high-speed rail to deep-sea tunnels — our connection hardware is
+            From high-speed rail to deep-sea tunnels �?our connection hardware is
             embedded in critical infrastructure projects across 40+ countries.
           </p>
         </div>
@@ -107,7 +107,7 @@ export default function IndustriesPage() {
                   idx % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
               >
-                {/* Image — alternating sides */}
+                {/* Image �?alternating sides */}
                 <div
                   className={`relative h-80 rounded-2xl overflow-hidden shadow-xl ${
                     idx % 2 === 1 ? "lg:order-2" : ""
@@ -143,8 +143,7 @@ export default function IndustriesPage() {
                     {ind.highlights.map((h) => (
                       <li key={h} className="flex items-start gap-2.5 text-sm text-gray-700">
                         <span className="h-5 w-5 rounded-full bg-primary-100 text-primary-700 flex items-center justify-center shrink-0 mt-0.5">
-                          ✓
-                        </span>
+                          �?                        </span>
                         {h}
                       </li>
                     ))}

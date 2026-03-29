@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about JoinTech Precast â€” 20+ years of manufacturing precision connection hardware for precast concrete structures.",
+    "Learn about JamesSplice â€?20+ years of manufacturing precision connection hardware for precast concrete structures.",
 };
 
 const stats = [
@@ -63,10 +63,10 @@ export default function AboutPage() {
             <ChevronRight className="h-4 w-4" />
             <span className="text-white">About</span>
           </div>
-          <h1 className="text-4xl font-bold text-white mb-3">About JoinTech Precast</h1>
+          <h1 className="text-4xl font-bold text-white mb-3">About JamesSplice</h1>
           <p className="text-blue-200 max-w-2xl">
             A specialist manufacturer and exporter of precast concrete connection
-            hardware â€” built on two decades of structural engineering expertise.
+            hardware â€?built on two decades of structural engineering expertise.
           </p>
         </div>
       </div>
@@ -81,14 +81,14 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed">
                 <p>
-                  Founded in Zhejiang, China, JoinTech Precast has grown from a
+                  Founded in Zhejiang, China, JamesSplice has grown from a
                   regional steel fabricator to a globally trusted supplier of
                   engineered connection hardware for precast concrete structures.
                 </p>
                 <p>
                   Our product range covers pile splice plates, tunnel segment
                   coupler sleeves, bridge prestress anchor systems, low-relaxation
-                  steel strands, and railway sleeper fastener inserts â€” all
+                  steel strands, and railway sleeper fastener inserts â€?all
                   manufactured in-house under strict quality control.
                 </p>
                 <p>
@@ -108,7 +108,7 @@ export default function AboutPage() {
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80"
-                alt="JoinTech factory"
+                alt="JamesSplice factory"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -163,7 +163,7 @@ export default function AboutPage() {
               {
                 icon: BarChart3,
                 title: "Custom Manufacturing",
-                desc: "OEM orders accepted. From material selection to surface treatment and packaging â€” we adapt to your project specs.",
+                desc: "OEM orders accepted. From material selection to surface treatment and packaging â€?we adapt to your project specs.",
               },
               {
                 icon: Award,

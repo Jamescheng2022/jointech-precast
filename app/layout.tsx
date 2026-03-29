@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "JoinTech Precast | Precision Connections for Precast Concrete",
-    template: "%s | JoinTech Precast",
+    default: "JamesSplice | Precision Connections for Precast Concrete",
+    template: "%s | JamesSplice",
   },
   description:
     "Global supplier of high-performance precast concrete connection hardware: pile splice plates, tunnel segment couplers, bridge prestress anchors, and more.",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://jointechprecast.com",
-    siteName: "JoinTech Precast",
+    url: "https://JamesSpliceprecast.com",
+    siteName: "JamesSplice",
   },
 };
 

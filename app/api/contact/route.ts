@@ -12,14 +12,14 @@ interface ContactPayload {
 
 function buildEmailBody(data: ContactPayload): string {
   return `
-New inquiry from JoinTech Precast website
+New inquiry from JamesSplice website
 
 Name:             ${data.name}
 Company:          ${data.company}
 Country:          ${data.country}
 Email:            ${data.email}
-Phone/WhatsApp:   ${data.phone || "â€”"}
-Product Interest: ${data.productInterest || "â€”"}
+Phone/WhatsApp:   ${data.phone || "â€?}
+Product Interest: ${data.productInterest || "â€?}
 
 Message:
 ${data.message}
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
 
     const resendApiKey = process.env.RESEND_API_KEY;
     const contactEmail = process.env.CONTACT_EMAIL;
-    const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@jointechprecast.com";
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@JamesSpliceprecast.com";
 
     if (!resendApiKey || !contactEmail) {
       // In development without env vars, log and return success
@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
         from: fromEmail,
         to: [contactEmail],
         reply_to: email,
-        subject: `[JoinTech Inquiry] ${name} â€” ${body.productInterest || "General"}`,
+        subject: `[JamesSplice Inquiry] ${name} â€?${body.productInterest || "General"}`,
         text: buildEmailBody(body),
       }),
     });
