@@ -45,13 +45,13 @@ export function Footer() {
               >
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a
+              <Link
                 href="/"
                 className="p-2 bg-gray-800 rounded-md text-gray-400 hover:text-white hover:bg-primary-700 transition-colors"
                 aria-label="Website"
               >
                 <Globe className="h-4 w-4" />
-              </a>
+              </Link>
             </div>
           </div>
 
