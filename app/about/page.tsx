@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about JamesSplice â€?20+ years of manufacturing precision connection hardware for precast concrete structures.",
+    "Learn about JamesSplice - 20+ years of manufacturing precision connection hardware for precast concrete structures.",
 };
 
 const stats = [
@@ -66,7 +66,7 @@ export default function AboutPage() {
           <h1 className="text-4xl font-bold text-white mb-3">About JamesSplice</h1>
           <p className="text-blue-200 max-w-2xl">
             A specialist manufacturer and exporter of precast concrete connection
-            hardware â€?built on two decades of structural engineering expertise.
+            hardware éˆ¥?built on two decades of structural engineering expertise.
           </p>
         </div>
       </div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 <p>
                   Our product range covers pile splice plates, tunnel segment
                   coupler sleeves, bridge prestress anchor systems, low-relaxation
-                  steel strands, and railway sleeper fastener inserts â€?all
+                  steel strands, and railway sleeper fastener inserts éˆ¥?all
                   manufactured in-house under strict quality control.
                 </p>
                 <p>
@@ -132,7 +132,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why us */}
+      {/* Capabilities */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-14">
@@ -163,7 +163,7 @@ export default function AboutPage() {
               {
                 icon: BarChart3,
                 title: "Custom Manufacturing",
-                desc: "OEM orders accepted. From material selection to surface treatment and packaging â€?we adapt to your project specs.",
+                desc: "OEM orders accepted. From material selection to surface treatment and packaging éˆ¥?we adapt to your project specs.",
               },
               {
                 icon: Award,
