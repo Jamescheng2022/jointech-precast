@@ -17,7 +17,7 @@ import { products } from "@/lib/products";
 export const metadata: Metadata = {
   title: "Precision Connections for Precast Concrete Structures",
   description:
-    "JamesSplice â€?global B2B supplier of pile splice plates, tunnel segment couplers, prestress anchors and more. Technical expertise meets reliable supply.",
+    "JamesSplice éˆ¥?global B2B supplier of pile splice plates, tunnel segment couplers, prestress anchors and more. Technical expertise meets reliable supply.",
 };
 
 const advantages = [
@@ -34,7 +34,7 @@ const advantages = [
   {
     icon: Settings2,
     title: "Custom Solutions",
-    desc: "OEM and bespoke manufacturing available. From drawing to delivery â€?full traceability and mill test certificates.",
+    desc: "OEM and bespoke manufacturing available. From drawing to delivery éˆ¥?full traceability and mill test certificates.",
   },
 ];
 
@@ -98,7 +98,7 @@ export default function HomePage() {
             </h1>
             <p className="text-lg md:text-xl text-blue-100 leading-relaxed mb-10 max-w-2xl">
               From pile foundations to tunnel linings and bridge post-tensioning
-              â€?we supply the engineered hardware that holds precast structures
+              éˆ¥?we supply the engineered hardware that holds precast structures
               together, shipped to over 40 countries.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -222,7 +222,7 @@ export default function HomePage() {
               Industries We Serve
             </h2>
             <p className="text-gray-500 max-w-xl mx-auto">
-              From metro tunnels to high-speed rail â€?our hardware is embedded
+              From metro tunnels to high-speed rail éˆ¥?our hardware is embedded
               in critical infrastructure globally.
             </p>
           </div>
