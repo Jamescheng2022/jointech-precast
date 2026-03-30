@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronRight, ArrowRight, CheckCircle2 } from "lucide-react";
 import { getProductsByIndustry, type IndustryKey } from "@/lib/products";
 
 export const metadata: Metadata = {
@@ -15,8 +15,7 @@ const industries = [
     id: "civil" as IndustryKey,
     title: "Civil Engineering",
     subtitle: "Foundation & General Precast",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     color: "from-blue-600 to-blue-900",
     description:
       "Precast concrete is the backbone of modern civil infrastructure. Our pile splice plates and connection hardware ensure structural integrity from foundation to superstructure in residential towers, industrial buildings, and coastal protection works.",
@@ -31,8 +30,7 @@ const industries = [
     id: "railway" as IndustryKey,
     title: "Railway & Metro",
     subtitle: "High-Speed Rail & Urban Transit",
-    image:
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80",
     color: "from-emerald-600 to-emerald-900",
     description:
       "Railways demand the highest dimensional precision and fatigue resistance. Our embedded sleeper fastener sleeves and tunnel lining couplers are designed to meet EN 13481, TB/T, and UIC standards for both high-speed and heavy-haul operations.",
@@ -47,14 +45,13 @@ const industries = [
     id: "bridge" as IndustryKey,
     title: "Bridge Construction",
     subtitle: "Prestressed Concrete & Post-Tensioning",
-    image:
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&q=80",
     color: "from-amber-600 to-amber-900",
     description:
       "Long-span bridges rely on precision post-tensioning systems. We supply complete anchor assemblies and low-relaxation strand that meet PTI, GB/T, and EN standards, backed by full mill test certificates and factory proof-testing.",
     highlights: [
-      "Complete post-tensioning anchor sets (3T â€?19T)",
-      "Low-relaxation Ã˜12.7mm & Ã˜15.2mm strands",
+      "Complete post-tensioning anchor sets (3T - 19T)",
+      "Low-relaxation 12.7mm & 15.2mm strands",
       "Corrugated HDPE post-tensioning ducts",
       "Grout caps and vent accessories",
     ],
@@ -63,15 +60,14 @@ const industries = [
     id: "underground" as IndustryKey,
     title: "Underground Works",
     subtitle: "Shield Tunnels & Deep Excavations",
-    image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
     color: "from-purple-600 to-purple-900",
     description:
       "Shield-driven tunnels require watertight, load-bearing connections at every segment joint. Our coupler sleeves are cast into segment molds at the precast plant, providing reliable rebar continuity across the gasket-sealed joint face.",
     highlights: [
       "Longitudinal and circumferential segment couplers",
       "Ductile iron or nodular cast iron material",
-      "Compatible with Ã˜4m â€?Ã˜14m shield tunnels",
+      "Compatible with 4m - 14m diameter shield tunnels",
       "Suitable for water, road, metro, and utility tunnels",
     ],
   },
@@ -90,7 +86,7 @@ export default function IndustriesPage() {
           </div>
           <h1 className="text-4xl font-bold text-white mb-3">Industries We Serve</h1>
           <p className="text-blue-200 max-w-2xl">
-            From high-speed rail to deep-sea tunnels â€?our connection hardware is
+            From high-speed rail to deep-sea tunnels éˆ¥?our connection hardware is
             embedded in critical infrastructure projects across 40+ countries.
           </p>
         </div>
@@ -102,12 +98,8 @@ export default function IndustriesPage() {
           const relatedProducts = getProductsByIndustry(ind.id);
           return (
             <section key={ind.id} id={ind.id}>
-              <div
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                  idx % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
-              >
-                {/* Image â€?alternating sides */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                {/* Image - alternating sides */}
                 <div
                   className={`relative h-80 rounded-2xl overflow-hidden shadow-xl ${
                     idx % 2 === 1 ? "lg:order-2" : ""
@@ -120,9 +112,7 @@ export default function IndustriesPage() {
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${ind.color} opacity-60`}
-                  />
+                  <div className={`absolute inset-0 bg-gradient-to-br ${ind.color} opacity-60`} />
                   <div className="absolute bottom-6 left-6">
                     <p className="text-xs font-semibold text-white/80 uppercase tracking-widest mb-1">
                       {ind.subtitle}
@@ -133,17 +123,12 @@ export default function IndustriesPage() {
 
                 {/* Content */}
                 <div className={idx % 2 === 1 ? "lg:order-1" : ""}>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    {ind.title}
-                  </h2>
-                  <p className="text-gray-500 leading-relaxed mb-6">
-                    {ind.description}
-                  </p>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">{ind.title}</h2>
+                  <p className="text-gray-500 leading-relaxed mb-6">{ind.description}</p>
                   <ul className="space-y-2.5 mb-8">
                     {ind.highlights.map((h) => (
                       <li key={h} className="flex items-start gap-2.5 text-sm text-gray-700">
-                        <span className="h-5 w-5 rounded-full bg-primary-100 text-primary-700 flex items-center justify-center shrink-0 mt-0.5">
-                          âœ?                        </span>
+                        <CheckCircle2 className="h-5 w-5 text-primary-600 shrink-0 mt-0.5" />
                         {h}
                       </li>
                     ))}
