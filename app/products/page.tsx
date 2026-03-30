@@ -10,12 +10,13 @@ export const metadata: Metadata = {
     "Browse our full range of precast concrete connection hardware: pile splice plates, tunnel segment couplers, prestress anchors, steel strands, and railway fastener sleeves.",
 };
 
-interface Props {
-  searchParams: { category?: string };
-}
+type Props = {
+  searchParams: Promise<{ category?: string }>;
+};
 
-export default function ProductsPage({ searchParams }: Props) {
-  const activeCategory = searchParams.category as Category | undefined;
+export default async function ProductsPage({ searchParams }: Props) {
+  const { category } = await searchParams;
+  const activeCategory = category as Category | undefined;
 
   const filtered = activeCategory
     ? products.filter((p) => p.category === activeCategory)
